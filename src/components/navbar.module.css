@@ -1,0 +1,48 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+}
+
+.navbar{
+    padding: 2rem 0rem ;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    border-bottom: 1px solid silver;
+}
+
+
+.nav{
+    display: flex;
+    gap: 3rem;
+}
+
+.navitems{
+    display: flex;
+    gap: 1.8rem;
+}
+
+.item{
+    text-decoration: none;
+    color: var(--Dark-grayish-blue);
+    font-size: 1.1rem;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.cart{
+    width: 30px;
+}
+
+.avatar{
+    width: 4rem;
+}
