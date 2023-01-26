@@ -1,4 +1,4 @@
-.container{
+.container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -6,8 +6,8 @@
     width: 100%;
 }
 
-.navbar{
-    padding: 2rem 0rem ;
+.navbar {
+    padding: 2rem 0rem;
 
     display: flex;
     align-items: center;
@@ -17,34 +17,35 @@
 }
 
 
-.nav{
+.nav {
     display: flex;
     gap: 3rem;
 }
 
-.navitems{
+.navitems {
     display: flex;
     gap: 1.8rem;
 }
 
-.item{
+.item {
     text-decoration: none;
     color: var(--Dark-grayish-blue);
     font-size: 1.1rem;
 }
 
-.content{
+.content {
     display: flex;
     align-items: center;
     gap: 3rem;
     position: relative;
 }
 
-.cart{
+.cart {
     width: 30px;
+    cursor: pointer;
 }
 
-.amountProduct{
+.amountProduct {
     padding: .1rem .4rem;
     color: white;
     border-radius: 50%;
@@ -55,6 +56,98 @@
     left: 10px;
 }
 
-.avatar{
+/* ============================ */
+
+.cartAmount {
+    width: 300px;
+
+    padding: 0 0 1rem 0;
+    background-color: white;
+    position: absolute;
+    top: 70px;
+    left: -100px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#titleCart {
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    align-self: flex-start;
+
+    width: 100%;
+    border-bottom: 1px solid lightgrey;
+}
+
+.cartAmount div {
+    display: flex;
+    align-items: center;
+    gap: .2rem;
+    margin: 1rem;
+}
+
+.cartAmount div img {
+    width: 50px;
+    height: 50px;
+}
+
+#deleteCart {
+    width: 15px;
+    height: 20px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.infoCartAmoun {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.infoCartAmoun p {
+    text-align: start;
+    color: gray;
+    font-weight: 500;
+}
+
+.infoCartAmoun .priceCartAmount {
+    width: 100%;
+    color: gray;
+    text-align: start;
+    font-weight: 500;
+    font-size: 1rem;
+
+}
+
+.infoCartAmoun .priceCartAmount strong {
+    color: black;
+}
+
+.cartAmount button {
+    padding: .7rem 0;
+    border: none;
+    border-radius: .4rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+
+    padding: 1rem 4rem;
+    width: 90%;
+    background-color: var(--Orange);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    cursor: pointer;
+    margin: auto;
+}
+
+.avatar {
     width: 4rem;
 }
