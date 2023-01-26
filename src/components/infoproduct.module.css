@@ -109,6 +109,46 @@
     cursor: pointer;
 }
 
+@media (max-width:768px) {
+    .container {
+        width: 80%;
+        padding: 2rem;
+    }
+
+    .contentInfo {
+        width: 100%;
+    }
+
+    .add-cart {
+    }
+
+    .subtitle {
+        font-size: .8rem;
+        
+    }
+
+    .title {
+        font-size: 1.8rem;
+    }
+
+    .description {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .content-price{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .amount{
+        width: 50%;
+        justify-content: space-between;
+    }
+
+}
+
 @media (max-width:425px) {
 
     .container {

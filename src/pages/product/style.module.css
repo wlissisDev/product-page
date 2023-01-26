@@ -11,6 +11,17 @@
     height: 100%;
 }
 
+
+@media (max-width:768px) {
+    .container{
+        width: 100%;
+        height: auto;
+    }
+    .product{
+        flex-direction: column;
+    }  
+}
+
 @media (max-width:425px) {
     .container{
         width: 100%;
@@ -20,3 +31,4 @@
         flex-direction: column;
     }
 }
+

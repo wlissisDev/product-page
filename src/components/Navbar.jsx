@@ -14,6 +14,15 @@ export const Navbar = ({ amountProduct }) => {
   return (
     <div className={style.container} >
       <div className={style.navbar}>
+      <div className={style.mobile}>
+        <div className={style.contentMobile}>
+          <div className={style.open}>
+            <div id={style.div01}></div>
+            <div id={style.div02}></div>
+            <div id={style.div03}></div>
+          </div>
+        </div>
+      </div>
         <div className={style.nav}>
           <img src={logo} alt="logo do site" className={style.logo} />
           <div className={style.navitems}>
@@ -51,19 +60,7 @@ export const Navbar = ({ amountProduct }) => {
         </div>
       </div>
 
-      <div className={style.mobile}>
-        <div className={style.contentMobile}>
-          <div className={style.open}>
-            <div id={style.div01}></div>
-            <div id={style.div02}></div>
-            <div id={style.div03}></div>
-          </div>
-
-        </div>
-
-
-
-      </div>
+     
     </div>
   )
 }
