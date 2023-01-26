@@ -5,7 +5,7 @@ import avatar from '../images/image-avatar.png'
 
 import style from './navbar.module.css'
 
-export const Navbar = () => {
+export const Navbar = ({amountProduct}) => {
   return (
     <div className={style.container} >
       <div className={style.navbar}>
@@ -21,6 +21,7 @@ export const Navbar = () => {
         </div>
         <div className={style.content}>
           <img className={style.cart} src={cart} alt="cart" />
+          <div className={style.amountProduct} style={amountProduct > 0 ? {display:"block"}:{display:"none"}}>{amountProduct}</div>
           <img className={style.avatar} src={avatar} alt="perfil" />
         </div>
       </div>

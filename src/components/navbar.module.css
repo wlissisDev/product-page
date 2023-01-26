@@ -37,10 +37,22 @@
     display: flex;
     align-items: center;
     gap: 3rem;
+    position: relative;
 }
 
 .cart{
     width: 30px;
+}
+
+.amountProduct{
+    padding: .1rem .4rem;
+    color: white;
+    border-radius: 50%;
+    font-weight: 600;
+    background-color: var(--Orange);
+    position: absolute;
+    top: 5px;
+    left: 10px;
 }
 
 .avatar{

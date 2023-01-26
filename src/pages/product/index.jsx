@@ -1,15 +1,19 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { InfoProduct } from '../../components/InfoProduct'
 import { Navbar } from '../../components/Navbar'
 import { ViewProduct } from '../../components/ViewProduct'
 import style from './style.module.css'
+
+
 export const Product = () => {
+  const [amount, setAmount] = useState(0)
+
   return (
     <div className={style.container}>
-      <Navbar />
+      <Navbar amountProduct={amount} />
       <div className={style.product}>
         <ViewProduct />
-        <InfoProduct />
+        <InfoProduct amount={amount} setAmount={setAmount}/>
       </div>
     </div>
   )

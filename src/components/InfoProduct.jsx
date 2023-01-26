@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import style from './infoproduct.module.css'
+import cart from '../images/icon-cart-btn.svg'
 
-export const InfoProduct = () => {
+export const InfoProduct = ({amount, setAmount}) => {
   return (
     <div className={style.container}>
       <div className={style.contentInfo}>
@@ -22,12 +23,25 @@ export const InfoProduct = () => {
 
         <div className={style['add-cart']}>
           <div className={style.amount}>
-            <span>-</span>
-            <span>0</span>
-            <span>+</span>
+            <span
+              onClick={() => {
+                if (amount < 1) { setAmount(0) }
+                else { setAmount(amount-1) }
+              }}
+            >
+              -
+            </span>
+            <span>{amount}</span>
+            <span
+              onClick={() => {
+                setAmount(amount+1)
+              }}
+            >
+              +
+            </span>
           </div>
           <button className={style['btn-add']}>
-            <img src="" alt="" />
+            <img src={cart} alt="" />
             Add to cart
           </button>
         </div>
