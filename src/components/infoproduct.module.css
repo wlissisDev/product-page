@@ -101,7 +101,7 @@
     font-size: 1rem;
     font-weight: 600;
 
-    padding: 1rem 4rem;
+    padding: 1rem 0;
     width: 100%;
     background-color: var(--Orange);
     display: flex;
