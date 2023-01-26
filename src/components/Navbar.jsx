@@ -59,31 +59,9 @@ export const Navbar = ({ amountProduct }) => {
             <div id={style.div03}></div>
           </div>
 
-          <img src={logo} alt="logo do site" className={style.logo} />
         </div>
 
-        <div className={style.content}>
-          <img
-            className={style.cart} src={cart}
-            alt="cart"
-            onClick={(e) => setActiveCart(!activeCart)} />
-          <div className={style.amountProduct} style={amountProduct > 0 ? { display: "block" } : { display: "none" }}>{amountProduct}</div>
-          <div className={style.cartAmount} style={activeCart ? { display: 'flex' } : { display: 'none' }}>
-            <span id={style.titleCart}>Cart</span>
-            <div>
-              <img src={thumbnailCart} alt="" />
-              <div className={style.infoCartAmoun}>
-                <p >Fall Limited Edition Sneakers</p>
-                <span className={style.priceCartAmount}>$125.00 x {amountProduct} <strong>${125 * amountProduct}.00</strong></span>
-              </div>
-              <img id={style.deleteCart} src={delet} alt="" />
-            </div>
-            <button>Checkout</button>
-          </div>
 
-
-          <img className={style.avatar} src={avatar} alt="perfil" />
-        </div>
 
       </div>
     </div>
