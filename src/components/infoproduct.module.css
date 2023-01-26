@@ -68,18 +68,19 @@
     align-items: center;
     gap: 2rem;
     border-radius: .4rem;
-    height: 3.4rem;
-    padding: 0 1rem;
+    padding:  .5rem .8rem;
     background-color: var(--Light-grayish-blue);
 }
 
 .amount span {
     font-weight: 800;
+    
 }
 
 .amount span:nth-child(1) {
     color: var(--Orange);
     font-size: 1.8rem;
+    cursor: pointer;
 }
 
 .amount span:nth-child(2) {
@@ -90,6 +91,7 @@
 .amount span:nth-child(3) {
     color: var(--Orange);
     font-size: 1.8rem;
+    cursor: pointer;
 }
 
 .btn-add {
@@ -106,5 +108,6 @@
     align-items: center;
     justify-content: center;
     gap: 1rem;
+    cursor: pointer;
 }
 

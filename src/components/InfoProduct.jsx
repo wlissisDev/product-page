@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import style from './infoproduct.module.css'
 import cart from '../images/icon-cart-btn.svg'
 
-export const InfoProduct = ({amount, setAmount}) => {
+export const InfoProduct = ({setAmount}) => {
+  const [newAmount, setNewAmount] = useState(0)
+
   return (
     <div className={style.container}>
       <div className={style.contentInfo}>
@@ -25,22 +27,24 @@ export const InfoProduct = ({amount, setAmount}) => {
           <div className={style.amount}>
             <span
               onClick={() => {
-                if (amount < 1) { setAmount(0) }
-                else { setAmount(amount-1) }
+                if (newAmount < 1) { setNewAmount(0) }
+                else { setNewAmount(newAmount-1) }
               }}
             >
               -
             </span>
-            <span>{amount}</span>
+            <span>{newAmount}</span>
             <span
               onClick={() => {
-                setAmount(amount+1)
+                setNewAmount(newAmount+1)
               }}
             >
               +
             </span>
           </div>
-          <button className={style['btn-add']}>
+          <button 
+          onClick={()=>setAmount(newAmount)}
+          className={style['btn-add']}>
             <img src={cart} alt="" />
             Add to cart
           </button>

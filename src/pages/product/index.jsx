@@ -7,6 +7,10 @@ import style from './style.module.css'
 
 export const Product = () => {
   const [amount, setAmount] = useState(0)
+  
+  function addProductCart(valueAmount){
+    setAmount(valueAmount)
+  }
 
   return (
     <div className={style.container}>
